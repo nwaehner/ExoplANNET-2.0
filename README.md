@@ -22,7 +22,7 @@ Comparing our results with the false alarm probability (FAP) method, we obtained
 
 # Code content
 
-This repository contains the code used for simulation, the trained neural network and some examples for testing. 
+This repository contains the code used for simulation (based on the previously done by L. A. Nieto for his paper), the trained neural network and some examples for testing. 
 
 Below are examples showing the simulated RV data, the GLS periodogram, and the NN prediction.
 
