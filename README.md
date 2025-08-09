@@ -24,7 +24,7 @@ Comparing our results with the false alarm probability (FAP) method, we obtained
 
 This repository contains the code used for simulation (based on the previously done by L. A. Nieto for his paper), the trained neural network and some examples for testing. 
 
-Below are examples showing the simulated RV data, the GLS periodogram, and the NN prediction.
+Below are examples showing the simulated RV data (sampled on real stellar observation calendars), the GLS periodogram, and the NN prediction.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/90ccbf27-cf42-4e8e-98bf-ac308d15e375" alt="imagen_buena" width="80%">
