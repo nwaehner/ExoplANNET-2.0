@@ -22,12 +22,18 @@ Comparing our results with the false alarm probability (FAP) method, we obtained
 
 # Code content
 
-This repository contains the code used for simulation, the trained neural network and some examples to test. Some examples below, showing the RV simulated data, the GLS periodogram and the NN prediction.
+This repository contains the code used for simulation, the trained neural network and some examples for testing. 
+
+Below are examples showing the simulated RV data, the GLS periodogram, and the NN prediction.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/90ccbf27-cf42-4e8e-98bf-ac308d15e375" alt="imagen_buena" width="48%">
-  <img src="https://github.com/user-attachments/assets/91cf5a56-6165-4421-9697-b748cd4b13a9" alt="imagen_buena_2" width="48%">
+  <img src="https://github.com/user-attachments/assets/90ccbf27-cf42-4e8e-98bf-ac308d15e375" alt="imagen_buena" width="80%">
 </p>
 
-For further details, my thesis (on spanish) describes the whole work and methodology used.
-For any ideas or inquieries, contact: nicolaswaehner@gmail.com
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/91cf5a56-6165-4421-9697-b748cd4b13a9" alt="imagen_buena_2" width="80%">
+</p>
+
+For further details, my thesis (in Spanish) describes the full work and methodology used.
+
+For any ideas or inquiries, contact me at: nicolaswaehner@gmail.com
