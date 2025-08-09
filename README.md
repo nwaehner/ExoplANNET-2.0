@@ -9,7 +9,7 @@ A convolutional neural network to detect planetary signals on radial velocity ti
 
 As my thesis project, I built upon [previous work](https://www.aanda.org/articles/aa/full_html/2023/09/aa46417-23/aa46417-23.html) by Luis A. Nieto and Rodrigo F. Díaz.
 
-In the thesis, we simulated radial velocity (RV) time series on multiple real observation calendars, typical in the search for exoplanets. The RV time series included both stellar activity and planetary signals. For each one, we computed the GLS periodogram and trained a neural network (NN) to determine whether the maximum peak was due to the presence of a planetary companion.
+In the thesis, we simulated radial velocity (RV) time series on multiple real observation calendars, typical in the search for exoplanets. The RV time series included both stellar activity and planetary signals. For each one, we computed the Generalized Lomb-Scargle (GLS) periodogram and trained a neural network (NN) to determine whether the maximum peak was due to the presence of a planetary companion.
 
 Comparing our results with the false alarm probability (FAP) method, we obtained 52% fewer false positives without increasing the number of false negatives. We also tested the method on real data, obtaining good performance. These results suggest that the NN approach may outperform the statistical methods currently in use. For further details, my thesis (in Spanish) describes the full work and methodology used.
 
