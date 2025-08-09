@@ -11,7 +11,7 @@ As my thesis project, I built upon [previous work](https://www.aanda.org/article
 
 In the thesis, we simulated radial velocity (RV) time series on multiple real observation calendars, typical in the search for exoplanets. The RV time series included both stellar activity and planetary signals. For each one, we computed the GLS periodogram and trained a neural network (NN) to determine whether the maximum peak was due to the presence of a planetary companion.
 
-Comparing our results with the false alarm probability (FAP) method, we obtained 52% fewer false positives without increasing the number of false negatives. We also tested the method on real data, obtaining good performance. These results suggest that the NN approach may outperform the statistical methods currently in use.
+Comparing our results with the false alarm probability (FAP) method, we obtained 52% fewer false positives without increasing the number of false negatives. We also tested the method on real data, obtaining good performance. These results suggest that the NN approach may outperform the statistical methods currently in use. For further details, my thesis (in Spanish) describes the full work and methodology used.
 
 ## Upgrades made with respect to the previous work:
 - Generalized the observation calendars to apply the neural network to real time series.
@@ -34,6 +34,29 @@ Below are examples showing the simulated RV data, the GLS periodogram, and the N
   <img src="https://github.com/user-attachments/assets/eb802500-8d2f-41af-bbd7-f7bb42b1e9cf" alt="imagen_buena_2" width="80%">
 </p>
 
-For further details, my thesis (in Spanish) describes the full work and methodology used.
+# Use
+To make it work, replace the paths at the beginning of functions.py. Then, use the following command to run the simulation, specifying the number of stars (int: STARS) and the number of planets per star (int: PLANETS):
+
+```
+"python ./rvsimu.py -stars STARS -pl PLANETS outputDir"
+```
+
+Positional arguments:
+  STARS                   Amount of synthetic RV samples
+  PLANETS                 Amount of planets on each star
+  outputDir               Output Dir
+
+Optional arguments:
+  -h, --help            show this help message and exit
+  -n NOISE, --noise NOISE
+                        NN=No Noise,WN=White Noise, CN=Correlated Noise (Default = CN)
+  -a AMPLITUDE, --amplitude AMPLITUDE 
+                        Minimum amplitude of the generated planets (Default = 0.1)
+  -p PERIOD, --period PERIOD
+                        Minimum period of the generated planets (Default = 5.0)
+  -s SEED, --seed SEED  
+                        Seed used to generate the samples (Default = random(0, 2**32 - 1))
+
+#Contact
 
 For any ideas or inquiries, contact me at: nicolaswaehner@gmail.com
