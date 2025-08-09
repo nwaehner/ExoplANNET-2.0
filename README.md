@@ -2,7 +2,7 @@
 A convolutional neural network to detect planetary signals on radial velocity time series
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/009cb1a4-529a-49ec-ac5d-8fa65efe3c9e" width="70%" alt="Demo Image">
+  <img src="https://github.com/user-attachments/assets/009cb1a4-529a-49ec-ac5d-8fa65efe3c9e" width="100%" alt="Demo Image">
 </p>
 
 # Abstract
