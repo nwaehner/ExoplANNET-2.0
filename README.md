@@ -31,7 +31,7 @@ Below are examples showing the simulated RV data, the GLS periodogram, and the N
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/91cf5a56-6165-4421-9697-b748cd4b13a9" alt="imagen_buena_2" width="80%">
+  <img src="https://github.com/user-attachments/assets/eb802500-8d2f-41af-bbd7-f7bb42b1e9cf" alt="imagen_buena_2" width="80%">
 </p>
 
 For further details, my thesis (in Spanish) describes the full work and methodology used.
