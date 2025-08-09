@@ -18,3 +18,9 @@ Comparing our results with the false alarm probability (FAP) method, we obtained
 - Trained with an extended range of planetary periods.
 - Calculated the FAP exclusively using the Monte Carlo method (for robustness and reliability).
 - Added an attention layer to improve interpretability, which also resulted in better overall performance.
+
+
+# Code content
+
+This repository contains the code used for simulation, the trained neural network and some examples to test. Below 
+
