@@ -42,20 +42,16 @@ To make it work, replace the paths at the beginning of functions.py. Then, use t
 ```
 
 Positional arguments:
-  STARS                   Amount of synthetic RV samples
-  PLANETS                 Amount of planets on each star
-  outputDir               Output Dir
+- **STARS**: Amount of synthetic RV samples  
+- **PLANETS**: Amount of planets on each star  
+- **outputDir**: Output directory  
 
 Optional arguments:
-  -h, --help            show this help message and exit
-  -n NOISE, --noise NOISE
-                        NN=No Noise,WN=White Noise, CN=Correlated Noise (Default = CN)
-  -a AMPLITUDE, --amplitude AMPLITUDE 
-                        Minimum amplitude of the generated planets (Default = 0.1)
-  -p PERIOD, --period PERIOD
-                        Minimum period of the generated planets (Default = 5.0)
-  -s SEED, --seed SEED  
-                        Seed used to generate the samples (Default = random(0, 2**32 - 1))
+- `-h`, `--help`: Show this help message and exit  
+- `-n NOISE`, `--noise NOISE`: NN=No Noise, WN=White Noise, CN=Correlated Noise (Default = CN)  
+- `-a AMPLITUDE`, `--amplitude AMPLITUDE`: Minimum amplitude of the generated planets (Default = 0.1)  
+- `-p PERIOD`, `--period PERIOD`: Minimum period of the generated planets (Default = 5.0)  
+- `-s SEED`, `--seed SEED`: Seed used to generate the samples (Default = random(0, 2**32 - 1)) 
 
 #Contact
 
