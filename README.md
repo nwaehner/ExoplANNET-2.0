@@ -53,6 +53,6 @@ Optional arguments:
 - `-p PERIOD`, `--period PERIOD`: Minimum period of the generated planets (Default = 5.0)  
 - `-s SEED`, `--seed SEED`: Seed used to generate the samples (Default = random(0, 2**32 - 1)) 
 
-#Contact
+# Contact
 
 For any ideas or inquiries, contact me at: nicolaswaehner@gmail.com
