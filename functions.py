@@ -117,9 +117,6 @@ def generate_RV_v5(DAYS, t, Noise, res, cond, err):
     # - Pulsations
     # - Granulation
     # - Rotational modulation
-    
-    #first, we add some white noise using the error vector
-    rv_wn = np.random.randn(len(err)) * err
 
     # for the first two elements we use the procedures detailed in
     # http://esoads.eso.org/abs/2011A%26A...525A.140D
@@ -131,8 +128,6 @@ def generate_RV_v5(DAYS, t, Noise, res, cond, err):
     
     # Each nu = 1/Days => 1/(86400 s) => 1/86400 Hz => 1.157e-5 hz => 11.57 microHz 
     
-
-    #nu = nu/(3600*24) * 10**(6)  # 10**6/(3600*24) = 11.57. Estaba bien lo de abajo.
     nu = nu * 11.57 #En microHz
     paso_microhz = paso_inv_dias*11.57 
     
@@ -174,13 +169,10 @@ def generate_RV_v5(DAYS, t, Noise, res, cond, err):
     # Now sample from that Gaussian Process as many curves as we want.
     rv_rot = gp.sample()[0]
 
-    #TODO, hacerlo antes
     if(Noise =='NN'):   
         rv_wop = np.zeros(DAYS)
-    elif(Noise =='WN'):
-        rv_wop = rv_wn
     else: #CN
-        rv_wop = rv_wn + rv_gran + rv_rot
+        rv_wop = rv_gran + rv_rot
         
     return rv_wop, nu, psd, P
 
